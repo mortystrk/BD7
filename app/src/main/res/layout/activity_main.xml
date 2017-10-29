@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="panasuk.bd7.MainActivity"
+    android:orientation="vertical">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="229dp" />
+
+    <TextView
+        android:id="@+id/textNote"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="62dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="onChange"
+            android:text="Изменить"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Удалить"
+            android:onClick="onDelete"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:onClick="onAdd"
+        android:text="Добавить"
+        android:layout_gravity="center_horizontal"
+        android:textSize="10sp" />
+
+</LinearLayout>
